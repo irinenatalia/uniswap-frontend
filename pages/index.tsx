@@ -94,8 +94,8 @@ export default function Home() {
               {signerAddress}
             </div>
           ) : (
-            <button className={styles.card}
-              className={styles.connectButton}
+            <button
+              className={`${styles.connect} ${styles.card}`}
               onClick={() => getSigner(provider)}
             >
               Connect Wallet
